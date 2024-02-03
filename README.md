@@ -1,2 +1,2 @@
-# SkimMilkStudio.github.io
+# SkimMilkStudio
 SkimMilk Studio inc.
