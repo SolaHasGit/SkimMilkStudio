@@ -32,14 +32,21 @@ p {
 }
 
 form {
-
     background-color: #acdbf3;
-    width: 250px;
-    height: 44px;
     border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    float: right;
+}
+
+.search input[type=text] {
+    width: 150px;
+    height: 25px;
+    border-radius: 1px;
+    border: none;
+}
+
+.search{
+    float:right;
+    margin: 5px;
 }
 
 
@@ -86,7 +93,7 @@ form {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
+    float:inline-start;
     color: rgb(111, 146, 174);
     text-align: center;
     padding: 14px 16px;
@@ -104,4 +111,10 @@ form {
 .topnav a.active {
     background-color: #B0D3F0;
     color: white;
+}
+
+footer{
+    height: 10%;
+    margin: 20px;
+    background-color:  rgb(139, 180, 218);
 }
