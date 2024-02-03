@@ -1,8 +1,107 @@
+html {
+    background-color: rgb(124, 159, 188);
+}
+
 #container {
-    margin: 0 auto;
+    margin: 50px;
     padding: 1%;
-    background-color: powderblue;
+    background-color: rgb(206, 229, 250);
     width: 90%;
     height: 800px;
 }
 
+header {
+    height: 10%;
+    margin-top: 0 auto;
+    background-size: contain;
+    background-position: center;
+    background-image:
+        url('/images/Logos_and_Banners/Skim_Milk_Studio Website_Banner_2.png');
+}
+
+h1 {
+    color: rgb(111, 146, 174);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    color: rgb(111, 146, 174);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+
+    background-color: #acdbf3;
+    width: 250px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#flex-container {
+    height: 375px;
+    display: flex;
+    border: 2px solid rgb(139, 180, 218);
+    background-color: rgb(139, 180, 218);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.flex-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 50px;
+}
+
+.box-1 {
+    background-color: rgb(152, 189, 218);
+    flex-grow: 2;
+}
+
+.box-2 {
+    background-color: rgb(152, 189, 218);
+}
+
+.box-3 {
+    background-color: rgb(152, 189, 218);
+}
+
+.box-4 {
+    background-color: rgb(152, 189, 218);
+}
+
+.topnav {
+    background-color: rgb(206, 229, 250) ;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: rgb(111, 146, 174);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #B0D3F0;
+    color: white;
+}
