@@ -7,15 +7,21 @@ html {
     padding: 1%;
     background-color: rgb(206, 229, 250);
     width: 90%;
-    height: 800px;
+    height: 1000px;
 }
 
 header {
     height: 10%;
-    background-size: contain;
-    background-position: center;
-    background-image: url(images/Logos_and_Banners/Skim_Milk_Studio_Website_Banner_2.png);
+    display: contents;
+    margin: 10px;
 }
+
+main{
+    margin: 1px;
+    height: 20%;
+
+}
+
 
 h1 {
     color: rgb(111, 146, 174);
