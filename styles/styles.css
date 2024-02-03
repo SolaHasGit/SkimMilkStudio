@@ -14,8 +14,7 @@ header {
     height: 10%;
     background-size: contain;
     background-position: center;
-    background-image:
-        url('images/Logos_and_Banners/Skim_Milk_Studio_Website_Banner_2.png');
+    background-image: url(/images/Logos_and_Banners/Skim_Milk_Studio_Website_Banner_2.png);
 }
 
 h1 {
@@ -43,8 +42,8 @@ form {
     border: none;
 }
 
-.search{
-    float:right;
+.search {
+    float: right;
     margin: 5px;
 }
 
@@ -85,13 +84,13 @@ form {
 }
 
 .topnav {
-    background-color: rgb(206, 229, 250) ;
+    background-color: rgb(206, 229, 250);
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float:inline-start;
+    float: inline-start;
     color: rgb(111, 146, 174);
     text-align: center;
     padding: 14px 16px;
@@ -111,8 +110,8 @@ form {
     color: white;
 }
 
-footer{
+footer {
     height: 10%;
     margin: 20px;
-    background-color:  rgb(139, 180, 218);
+    background-color: rgb(139, 180, 218);
 }
