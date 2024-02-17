@@ -14,13 +14,7 @@ html {
 #intro{
     color: white;
 }
-#products-container{
-    margin: 50px;
-    padding: 1%;
-    background-color: rgb(206, 229, 250);
-    width: 90%;
-    height: 2000px;
-}
+
 
 header {
     height: 10%;
@@ -199,6 +193,13 @@ h3{
 
 /*Styling for details page*/
 
+#details-container{
+    margin: 50px;
+    padding: 1%;
+    background-color: rgb(206, 229, 250);
+    width: 90%;
+    height: auto; 
+}
 
 .product-details {
     max-width: 800px;
@@ -239,4 +240,67 @@ h3{
     border-width: 5px;
     height: 300px;
     width: 900px;
+}
+
+/*Styling for product.html mostly*/
+
+#products-page-container {
+    margin: 50px;
+    padding: 1%;
+    background-color: rgb(206, 229, 250);
+    width: 90%;
+    height: 2000px;
+}
+
+
+.products-container {
+    height: 15%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+
+.products-flex {
+    display: flex;
+    width: 20%;
+    padding: 1px;
+    margin: 15px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img-style {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgb(163, 202, 234)
+}
+
+
+.product-description {
+    text-align: center;
+    margin-top: auto;
+    color: black;
+}
+
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.see-all-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 12pt;
 }
