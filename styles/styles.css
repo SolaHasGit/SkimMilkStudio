@@ -1,3 +1,5 @@
+/*Styling for the home page*/
+
 html {
     background-color: rgb(124, 159, 188);
 }
@@ -7,11 +9,12 @@ html {
     padding: 1%;
     background-color: rgb(206, 229, 250);
     width: 90%;
-    height: 1000px;
+    height: auto;
 }
-
+#intro{
+    color: white;
+}
 #products-container{
-    margin: 50px;
     margin: 50px;
     padding: 1%;
     background-color: rgb(206, 229, 250);
@@ -64,21 +67,34 @@ form {
 
 
 #flex-container {
-    height: 375px;
+    height: auto;
+    width: auto;
     display: flex;
     background-color: rgb(139, 180, 218);
     padding: 10px;
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
+    margin: auto;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color:#B0D3F0
+    
 }
 
-.flex-image {
+#flex-image {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    object-position: bottom;
-    padding: 50px;
+    object-position: bottom;   
+    border-style: groove;
+    border-radius: 10px;
+    border-color: rgb(163, 202, 234);
+    border-width: 5px;
+    margin: 50px;
+    display: flex;
+
 }
 
 
@@ -109,8 +125,118 @@ form {
     color: white;
 }
 
-footer {
-    height: 10%;
-    margin: 20px;
+footer{
     background-color: rgb(139, 180, 218);
+    text-align: center;
+    bottom: 0;
+    width: 95=8%;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Styling for the Shopping Cart Page! */
+#cart-container{
+    margin: 50px;
+    padding: 1%;
+    background-color: rgb(206, 229, 250);
+    width: 90%;
+    height: auto;
+}
+.cart {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgb(111, 146, 174);
+    border-style:ridge;
+    background-color: #f9f9f9;
+}
+
+h3{
+ color:rgb(44, 89, 125)
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    background-color: rgb(111, 146, 174);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.checkout-btn:hover {
+    background-color: #2cb3dc;
+}
+
+#cart-images {
+    border-style: groove;
+    border-radius: 10px;
+    border-color: rgb(163, 202, 234);
+    border-width: 5px;
+    height: 100px;
+    width: 400px;
+}
+
+/*Styling for details page*/
+
+
+.product-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-details img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.add-to-cart-btn {
+    background-color: rgb(111, 146, 174);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #2cb3dc;
+}
+
+
+#detail-images {
+    border-style: groove;
+    border-radius: 10px;
+    border-color: rgb(163, 202, 234);
+    border-width: 5px;
+    height: 300px;
+    width: 900px;
 }
