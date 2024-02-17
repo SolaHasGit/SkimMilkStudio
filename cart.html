@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/x-icon" href="images/Logos_and_Banners/Skim_Milk_Logo_3.png">
+</head>
+
+<body>
+    <div id="cart-container">
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a class="active" href="cart.html">Shopping Cart</a>
+            <div class="search">
+              <form action="#" role="search">
+                <input type="text" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                <button>Search</button>
+              </form>
+            </div>
+          </div>
+          <header>
+        <div>
+          <img src="images/Logos_and_Banners/Skim_Milk_Studio_Website_Banner_2.png" alt="header image" width="100%" height="100%">
+        </div>
+      </header>
+
+      <main>
+        <h1> S H O P P I N G ~ C A R T 
+        </h1>
+        <p> Order Details
+          <br>
+          We offer stickers, pins, mouse pads and more!
+          <br>
+          Follow my instagram <a class="linkcolor" href="https://www.instagram.com/skimmilkstudio/?hl=en">@skimmilkstudio
+          </a>
+        </p>
+
+        <section class="cart">
+            <div class="cart-item">
+                <img id="cart-images" src="images/Mouse_Pads/Mouse_pad_medium_2.jpg" alt="Item 1">
+                <div class="item-details">
+                    <h3>Soot Milk Mouse Pad</h3>
+                    <p>Price: $35.00</p>
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" value="1">
+                    <button class="update-btn">Update</button>
+                    <button class="remove-btn">Remove</button>
+                    <p class="item-total">Total: $35.00</p>
+                </div>
+            </div>
+    
+            <div class="cart-item">
+                <img id="cart-images" src="images/Stickers/Blue_Cow.PNG" alt="Blue_Cow">
+                <div class="item-details">
+                    <h3>Blue Cow Sticker</h3>
+                    <p>Price: $15.00</p>
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" id="quantity2" value="2">
+                    <button class="update-btn">Update</button>
+                    <button class="remove-btn">Remove</button>
+                    <p class="item-total">Total: $15.00</p>
+                </div>
+            </div>
+    
+            <div class="cart-total">
+                <p>Subtotal: $50.00</p>
+                <p>Tax (6.75%): $3.38</p>
+                <p>Delivery Fee: $15.00</p>
+                <p>Total: $68.38</p>
+            </div>
+    
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </section>
+    
+        <footer>
+            <p>&copy; 2024 Amazing Shopping Cart. All Rights Reserved.</p>
+        </footer>
+
+      </main>
+
+    </div>
+    
+
+</body>
+
+</html>
