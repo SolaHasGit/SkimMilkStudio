@@ -1,0 +1,59 @@
+/*The Styling for the adminstrative pages*/
+
+html {
+    background-color: rgb(124, 159, 188);
+}
+
+header {
+    height: auto;
+    display: contents;
+    margin: 10px;
+}
+
+.topnav {
+    background-color: rgb(206, 229, 250);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: inline-start;
+    color: rgb(111, 146, 174);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #B0D3F0;
+    color: white;
+}
+
+.search {
+    float: right;
+    margin: 5px;
+}
+
+.admin-container {
+    margin: 50px;
+    padding: 1%;
+    background-color: rgb(206, 229, 250);
+    width: 90%;
+    height: auto;
+}
+
+.flex-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    flex-direction: column;
+}

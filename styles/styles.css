@@ -304,3 +304,25 @@ h3{
     text-decoration: none;
     font-size: 12pt;
 }
+
+/*Login styling*/
+
+#login-container{
+    margin: 50px;
+    padding: 1%;
+    background-color: rgb(206, 229, 250);
+    width: 90%;
+    height: auto;
+
+}
+
+.login-box{
+    display: flex;
+    width: 100%;
+    padding: 1px;
+    margin: 5px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}

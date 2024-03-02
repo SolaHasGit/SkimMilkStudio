@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--The HTML page for Administrator page-->
+<head>
+    <meta charset="utf-8">
+    <title>Administrator Page</title>
+    <link rel="stylesheet" href="styles/admin.css">
+    <link rel="icon" type="image/x-icon" href="images/Logos_and_Banners/Skim_Milk_Logo_3.png">
+</head>
+
+<body>
+    <div class="admin-container">
+        <!--Navigation bar for Admin, must login inorder to access-->
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="bulk-upload.html">Bulk Upload</a>
+            <a href="login.html">Login</a>
+            <a href="index.html">Logout</a>
+            <div class="search">
+                <form action="#" role="search">
+                    <input type="text" id="query" name="q" placeholder="Search..."
+                        aria-label="Search through site content">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <header>
+            <div>
+                <img src="images/Logos_and_Banners/Skim_Milk_Studio_Website_Banner_2.png" alt="header image"
+                    width="100%" height="100%">
+            </div>
+        </header>
+        <!--Fields for admin to edit or add products-->
+        <main>
+            <div class="flex-container">
+                <h2>Administrator Page</h2>
+                <p><strong>Edit</strong> or <strong>Add</strong> a product</p>
+                <form class="edit-product">
+                    <input type="text" id="product-query" name="q" placeholder="Search product...">
+                    <button type="submit">Search Product</button>
+                    <br>
+                    <br>
+                    <label for="productId">Product ID:</label>
+                    <input type="text" id="productId" name="productId" readonly>
+                    <br>
+                    <br>
+                    <label for="productName">Name:</label>
+                    <input type="text" id="productName" name="productName" required>
+                    <br>
+                    <br>
+                    <label for="productDescription">Description:</label>
+                    <input type="text" id="productDescription" name="productDescription" required>
+                    <br>
+                    <br>
+                    <label for="categoryId">Category ID (or Name):</label>
+                    <input type="text" id="categoryId" name="categoryId" required>
+                    <br>
+                    <br>
+                    <label for="imagePath">Image Path:</label>
+                    <input type="text" id="imagePath" name="imagePath" required>
+                    <br>
+                    <br>
+                    <label for="productPrice">Price:</label>
+                    <input type="text" id="productPrice" name="productPrice" required>
+                    <br>
+                    <br>
+                    <button type="submit">Submit Product</button>
+                    <br>
+                    <br>
+                </form>
+            
+            </div>
+        
+        </main>
+    
+    </div>
+
+</body>
+
+</html>
