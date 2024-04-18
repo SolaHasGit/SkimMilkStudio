@@ -1,0 +1,328 @@
+/*Styling for the home page*/
+
+html {
+    background-color: rgb(124, 159, 188);
+}
+
+#home-container {
+    margin: 50px;
+    padding: 1%;
+    background-color: rgb(206, 229, 250);
+    width: 90%;
+    height: auto;
+}
+#intro{
+    color: white;
+}
+
+
+header {
+    height: 10%;
+    display: contents;
+    margin: 10px;
+}
+
+main{
+    margin: 1px;
+    height: 20%;
+
+}
+
+
+h1 {
+    color: rgb(111, 146, 174);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    color: rgb(111, 146, 174);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+    background-color: #acdbf3;
+    border-radius: 5px;
+    float: right;
+}
+
+.search input[type=text] {
+    width: 150px;
+    height: 25px;
+    border-radius: 1px;
+    border: none;
+}
+
+.search {
+    float: right;
+    margin: 5px;
+}
+
+
+#flex-container {
+    height: auto;
+    width: auto;
+    display: flex;
+    background-color: rgb(139, 180, 218);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: auto;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color:#B0D3F0
+    
+}
+
+#flex-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;   
+    border-style: groove;
+    border-radius: 10px;
+    border-color: rgb(163, 202, 234);
+    border-width: 5px;
+    margin: 50px;
+    display: flex;
+
+}
+
+
+.topnav {
+    background-color: rgb(206, 229, 250);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: inline-start;
+    color: rgb(111, 146, 174);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #B0D3F0;
+    color: white;
+}
+
+footer{
+    background-color: rgb(139, 180, 218);
+    text-align: center;
+    bottom: 0;
+    width: 95=8%;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Styling for the Shopping Cart Page! */
+#cart-container{
+    margin: 50px;
+    padding: 1%;
+    background-color: rgb(206, 229, 250);
+    width: 90%;
+    height: auto;
+}
+.cart {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgb(111, 146, 174);
+    border-style:ridge;
+    background-color: #f9f9f9;
+}
+
+h3{
+ color:rgb(44, 89, 125)
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    background-color: rgb(111, 146, 174);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.checkout-btn:hover {
+    background-color: #2cb3dc;
+}
+
+#cart-images {
+    border-style: groove;
+    border-radius: 10px;
+    border-color: rgb(163, 202, 234);
+    border-width: 5px;
+    height: 100px;
+    width: 400px;
+}
+
+/*Styling for details page*/
+
+#details-container{
+    margin: 50px;
+    padding: 1%;
+    background-color: rgb(206, 229, 250);
+    width: 90%;
+    height: auto; 
+}
+
+.product-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-details img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.add-to-cart-btn {
+    background-color: rgb(111, 146, 174);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #2cb3dc;
+}
+
+
+#detail-images {
+    border-style: groove;
+    border-radius: 10px;
+    border-color: rgb(163, 202, 234);
+    border-width: 5px;
+    height: 300px;
+    width: 900px;
+}
+
+/*Styling for product.html mostly*/
+
+#products-page-container {
+    margin: 50px;
+    padding: 1%;
+    background-color: rgb(206, 229, 250);
+    width: 90%;
+    height: 2000px;
+}
+
+
+.products-container {
+    height: 15%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+
+.products-flex {
+    display: flex;
+    width: 20%;
+    padding: 1px;
+    margin: 15px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img-style {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgb(163, 202, 234)
+}
+
+
+.product-description {
+    text-align: center;
+    margin-top: auto;
+    color: black;
+}
+
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.see-all-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+/*Login styling*/
+
+#login-container{
+    margin: 50px;
+    padding: 1%;
+    background-color: rgb(206, 229, 250);
+    width: 90%;
+    height: auto;
+
+}
+
+.login-box{
+    display: flex;
+    width: 100%;
+    padding: 1px;
+    margin: 5px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
