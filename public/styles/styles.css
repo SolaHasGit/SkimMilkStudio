@@ -145,6 +145,25 @@ footer{
     background-color: #f9f9f9;
 }
 
+.product-list{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgb(111, 146, 174);
+    border-style:ridge;
+    background-color: #f9f9f9;
+}
+
+.product-item{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
 h3{
  color:rgb(44, 89, 125)
 }
@@ -249,16 +268,16 @@ h3{
     padding: 1%;
     background-color: rgb(206, 229, 250);
     width: 90%;
-    height: 2000px;
+    height: auto;
 }
 
 
 .products-container {
     height: 15%;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: space-evenly;
 }
 
 
@@ -325,4 +344,31 @@ h3{
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
+}
+
+.cats{
+    margin: 50px;
+    padding: 1%;
+    background: linear-gradient(to bottom,rgb(124, 159, 188),rgb(206, 229, 250));
+    width: 90%;
+    height: auto;
+}
+
+.cat-cage {
+    max-width: 500px; 
+    margin: 0 auto; 
+    text-align: center;
+
+}
+
+#img-box {
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+#cat-image {
+    max-width: 99%; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border: 2px solid #ccc; /* Optional: Add a border for visual clarity */
+    border-style: groove;
+    border-radius: 10px;
 }

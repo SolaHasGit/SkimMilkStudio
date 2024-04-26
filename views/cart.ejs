@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/Logos_and_Banners/Skim_Milk_Logo_3.png">
+</head>
+
+<body>
+    <div id="cart-container">
+        <div class="topnav">
+            <a href="/">Home</a>
+            <a href="/products">Products</a>
+            <a class="active" href="/cart">Shopping Cart</a>
+            <a href="/admin.html">Admin</a>
+            <a href="cat.html">Cuddle Bud</a>
+            <div class="search">
+                <form action="#" role="search">
+                    <input type="text" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                    <button>Search</button>
+                </form>
+            </div>
+        </div>
+        <header>
+            <div>
+                <img src="images/Logos_and_Banners/Skim_Milk_Studio_Website_Banner_2.png" alt="header image" width="100%" height="100%">
+            </div>
+        </header>
+
+        <h1>Shopping Cart</h1>
+
+        <div class="product-list">
+            <!-- Display all products -->
+            <% for (let i = 0; i < products.length; i++) { %>
+            <div class="product-item">
+                <img src="<%= products[i].imageURL %>" alt="<%= products[i].productName %>">
+                <p><%= products[i].productName %></p>
+                <p>$<%= products[i].price.toFixed(2) %></p>
+                <!-- Form to add product to cart -->
+                <form action="/cart/add" method="post">
+                    <input type="hidden" name="productID" value="<%= products[i].id %>">
+                    <input type="number" name="numItems" value="1" min="1">
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </div>
+            <% } %>
+        </div>
+
+        <div class="cart-actions">
+            <!-- Checkout button -->
+            <form action="/cart/checkout" method="post">
+                <button type="submit">Checkout</button>
+            </form>
+        </div>
+
+        <!-- Cart items will be displayed here -->
+        <div class="cart">
+            <h2>Cart Items</h2>
+            <% for (let i = 0; i < cartContents.length; i++) { %>
+            <div class="cart-item">
+                <p><%= cartContents[i].productName %> - Quantity: <%= cartContents[i].numItems %></p>
+                <!-- Form to remove product from cart -->
+                <form action="/cart/remove" method="post">
+                    <input type="hidden" name="productID" value="<%= cartContents[i].productID %>">
+                    <button type="submit">Remove</button>
+                </form>
+            </div>
+            <% } %>
+        </div>
+
+        <footer>
+            <!-- Footer content -->
+        </footer>
+    </div>
+</body>
+
+</html>

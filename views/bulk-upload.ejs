@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--The HTML page for Administrator page-->
 <head>
     <meta charset="utf-8">
     <title>Administrator Page</title>
@@ -11,17 +10,15 @@
 
 <body>
     <div class="admin-container">
-        <!--Navigation bar for Admin, must login inorder to access-->
+        <!-- Navigation bar for Admin, must log in to access -->
         <div class="topnav">
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="bulk-upload.html">Bulk Upload</a>
-            <a href="login.html">Login</a>
-            <a href="index.html">Logout</a>
+            <a href="/">Home</a>
+            <a href="/products">Products</a>
+            <a href="/admin">Products</a>
+            <a class="active" href="/bulk-upload">Bulk Upload</a>
             <div class="search">
                 <form action="#" role="search">
-                    <input type="text" id="query" name="q" placeholder="Search..."
-                        aria-label="Search through site content">
+                    <input type="text" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
                     <button type="submit">Search</button>
                 </form>
             </div>
@@ -33,7 +30,7 @@
                     width="100%" height="100%">
             </div>
         </header>
-        <!--Fields for admin to edit or add products-->
+        <!-- Fields for admin to edit or add products -->
         <main>
             <div class="flex-container">
                 <h2>Administrator Page</h2>
@@ -71,13 +68,9 @@
                     <br>
                     <br>
                 </form>
-            
             </div>
-        
         </main>
-    
     </div>
-
 </body>
 
 </html>

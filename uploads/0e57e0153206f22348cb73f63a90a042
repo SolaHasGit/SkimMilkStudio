@@ -1,0 +1,22 @@
+[
+    {
+        "id":15,
+        "productName": "Strawberry Heart Sando",
+        "productDescription": "Description",
+        "imagePath": "images/Stickers/Strawberry_Heart_Sando.png",
+        "price": 2.99,
+        "featuredProduct": "No",
+        "categoryId": 1
+    },
+    {
+        "id": 16,
+        "productName": "Witchy Umbreon",
+        "productDescription": "Spooky Umbreon",
+        "imagePath": "images/Stickers/Witchy_Umbreon.png",
+        "price": 2.99,
+        "featuredProduct": "No",
+        "categoryId": 1
+        
+        
+    }
+]

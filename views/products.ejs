@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Products</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/x-icon" href="images/Logos_and_Banners/Skim_Milk_Logo_3.png">
+</head>
+
+
+<body>
+  <div id="products-page-container">
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a class="active" href="/products">Products</a>
+      <a href="/cart">Shopping Cart</a>
+      <a href="admin.html">Admin</a>
+      <a href="cat.html">Cuddle Bud</a>
+      <div class="search">
+        <form action="#" role="search">
+          <input type="text" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+          <button>Search</button>
+        </form>
+      </div>
+    </div>
+    <header>
+      <div>
+        <img src="images/Logos_and_Banners/Skim_Milk_Studio_Website_Banner_2.png" alt="header image" width="100%"
+          height="100%">
+      </div>
+    </header>
+
+
+    <h1>Products</h1>
+
+<div class="products-container">
+    <!-- Add products -->
+    <% for (let i = 0; i < products.length; i++) { %>
+      <div class="products-flex">
+        <img class="img-style" src="<%= products[i].imageURL %>" alt="<%= products[i].productName %>">
+        <p class="product-description"><%= products[i].productName %>
+        <br>
+        $<%= products[i].price.toFixed(2) %>
+        <br>
+        <br>
+        <%= products[i].productDescription %>
+        <br>
+        <a href="/productdetail">View Details</a>
+      </p>
+      </div>
+    <% } %>
+  </div>
+</div>
+
+
+
+  </div>
+
+
+
+
+</body>
+
+
+</html>
